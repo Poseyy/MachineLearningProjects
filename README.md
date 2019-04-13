@@ -1,7 +1,4 @@
 # MachineLearningProjects
-This repository contains various machine learning projects I've engaged in. Each subdirectory represents a different project.
-
-# Malgo models
 
 This repo is dedicated to Machine Learning models I've created in both an academic and non-academic setting. My focus is implementing models for PoC and exploring how different models perform on the same datasets. 
 
