@@ -1,0 +1,13 @@
+pyex
+quandl
+pandas
+numpy
+matplotlib
+scipy
+scikit-learn
+h5py
+cython
+pystan
+fbprophet
+tensorflow
+keras
