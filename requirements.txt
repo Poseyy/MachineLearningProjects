@@ -3,6 +3,7 @@ quandl
 pandas
 numpy
 matplotlib
+seaborn
 scipy
 scikit-learn
 h5py
