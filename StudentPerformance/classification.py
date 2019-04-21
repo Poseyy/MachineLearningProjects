@@ -95,6 +95,17 @@ X_scale1 = scale(X1)
 #X_scale2 = scale(X2)
 #print(X)
 
+bestfeatures = SelectKBest(score_func=chi2, k='all')
+fit = bestfeatures.fit(X1,Y1)
+
+dfscores = pd.DataFrame(fit.scores_)
+dfcolumns = pd.DataFrame(df.columns)
+
+featureScores = pd.concat([dfcolumns,dfscores],axis=1)
+featureScores.columns = ['Specs','Score']  #naming the dataframe columns
+
+print(featureScores.nlargest(5,'Score'))  #print 10 best features
+
 # encode class values as integers
 encoder = LabelEncoder()
 encoder.fit(Y1)
